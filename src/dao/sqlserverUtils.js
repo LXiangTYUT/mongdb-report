@@ -207,7 +207,7 @@ Query.prototype.select = function(successCallback, failedCallback) {
  */
 Query.prototype.query = function(sql, successCallback, failedCallback) {
 	var dbConfig = this.dbConfig;
-	var sql = this.queryStr || '';
+
 
 	var connObj = mssql.connect(dbConfig, function(err) {
 		if(err) {
